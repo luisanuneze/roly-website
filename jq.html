@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Roly Tutorials</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./design.css'>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src='./javascript/main.js'></script>
+
+</head>
+
+<body>
+
+    <center>
+        <img src="./resources/Logo.png" class="logo">
+    </center>
+
+    <nav class="menu2">
+        <ul class="menu">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./js.html">JavaScript</a></li>
+            <li><a href="./jq.html">JQuery</a></li>
+            <li><a href="./aboutus.html">Sobre nosotros</a></li>
+        </ul>
+    </nav>
+
+    <img src="https://miro.medium.com/max/2736/1*B7M1EIzU5Em5KPh3RM_L3g.gif" width="100%">
+
+    <img src="./resources/JQ.png" class="pageTuto">
+    <p id="title1JQ" class="pageTutoText">¿Qué es JQuery?</p>
+
+    <ul id="navigation" style="font-weight: bold;">
+        <li><a href="#title1JQ">¿Qué es JQuery?</a></li>
+        <li>
+            <a href="#title2JQ">Document ready</a>
+        </li>
+        <li>
+            <a href="#title3JQ">Selectores JQuery</a>
+        </li>
+        <li>
+            <a href="#title4JQ">Métodos de eventos</a>
+        </li>
+        <li>
+            <a href="#title5JQ">Animación con JQuery</a>
+        </li>
+
+        <li><a href="#title6JQ">Valores predefinidos</a></li>
+        <li>
+            <a href="#title7JQ">Método CSS</a>
+        </li>
+        <li>
+            <a href="#title8JQ">Video de JQuery</a>
+        </li>
+        <li>
+            <a href="#title9JQ">Ejemplo de JQuery</a>
+        </li>
+    </ul>
+
+
+    <div class="contenedor">
+        <p class="poda">jQuery es una biblioteca de JavaScript que simplifica la forma de desarrollar aplicaciones web. Las aplicaciones que utilizan jQuery abarcan menor tiempo y menores líneas de código en comparación a las aplicaciones implementadas con solamente
+            JS. Permite manipular elementos del DOM(textos, imágenes, enlaces, etc.) así mismo cambiar el diseño CSS o realizar peticiones Ajax utilizando instrucciones simples, por medio de un código fuente muy eficiente y sencillo. EL propósito de jQuery
+            es facilitar el uso de JavaScript en un sitio web.
+        </p>
+        <p class="poda">
+            Las características que contiene jQuery son:
+        </p>
+
+        <ul class="poda" style="margin-left: 5%;">
+            <li>Manipulación HTML/DOM</li>
+            <li>Manipulación CSS</li>
+            <li>Métodos de eventos HTML</li>
+            <li>Efectos y animaciones</li>
+            <li>AJAX</li>
+            <li>Utilidades</li>
+        </ul>
+
+        <p class="poda">
+            JQuery puede ser integrado en una página web simplemente en un documento de JavaScript vinculandolo a una copia local de la siguiente manera:</p>
+        <div style="text-align: center;">
+            <img src="./resources/jqTuto/Imagen 1.png" style="margin-top: 3%; margin-bottom: 2%;">
+        </div>
+        <p class="poda">
+            La interfaz de JQuery está compuesta por funciones, métodos y utilidades estáticas. En el caso de las funciones, este provee dos tipos, las funciones de utilidad estática y los métodos de objeto, ambas son accesadas por el identificador principal jQuery.
+            Utiliza la sintaxis de estilo de selector de CSS para recuperar elementos en el modelo de objeto de documento (DOM) en un conjunto de elementos envuelto, y luego manipular elementos en el conjunto envuelto con funciones jQuery para archivar
+            diferentes efectos.<br><br> La sintaxis de JQuery selecciona o consulta elementos HTML y realiza alguna acción en los elementos.
+            <br> La sintaxis básica es la siguiente:</p>
+        <div style="text-align: center;">
+            <img src="./resources/jqTuto/Imagen 2.png" style="margin-top: 3%; margin-bottom: 2%;">
+        </div>
+        <div style="text-align: center;">
+            <img src="./resources/jqTuto/Imagen 3.png" style="margin-top: 3%; margin-bottom: 2%;">
+        </div>
+
+        <p class="poda">Por ejemplo:</p>
+        <br>
+
+        <p class="poda">
+            <li>$(this).hide() - oculta el elemento actual.</li>
+        </p>
+        <p class="poda">
+            <li>$(".test").hide() - Oculta todos los elementos con class = "test".</li>
+        </p>
+        <p class="poda">
+            <li>$("#test").hide() - oculta el elemento con id = "test".
+            </li>
+        </p>
+        <p id="title2JQ" class="topics">Evento document ready</p>
+        <p class="poda">
+            Esta función se utiliza para evitar que el código JQuery se ejecute antes de que el documento se cargue correctamente. Implementar este tipo de función es una buena práctica.</p>
+        <br>
+        <div style="text-align: center;">
+            <img src="./resources/jqTuto/Imagen 4.png">
+        </div>
+        <p class="poda"> Así mismo el equipo de JQuery ha creado un método más corto para el evento de preparación de un documento, la cual es la siguiente:</p>
+        <div style="text-align: center;">
+            <img src="./resources/jqTuto/Imagen 6.png" style="margin-top: 3%; margin-bottom: 2%;">
+        </div>
+
+        <h3 id="title3JQ" class="topics">Selectores de JQuery</h3>
+        <p class="poda">
+            Los selectores de JQuery se utilizan para buscar o seleccionar elementos HTML en función de su nombre, id, clases, tipos, atributos, valores de atributos etc. Cada selector de JQuery comienza con el signo dólar y paréntesis: $().
+        </p>
+
+        <p class="poda">
+            El selector de elementos selecciona elementos en función del nombre del elemento. Permite seleccionar todos los elementos de la etiqueta p que se encuentren dentro de la etiqueta body en una página, se expresa de la siguiente manera: $("p")</p>
+
+        <h4 class="poda">Ejemplo</h4>
+
+        <p class="poda">
+            El usuario al hacer click en un botón, todos los elemento sde la etiqueta p se ocultaran se utiliza la siguiente función:</p>
+
+        <div style="text-align: center;">
+            <img src="./resources/jqTuto/Imagen 7.png" style="margin-top: 3%; margin-bottom: 2%;">
+        </div>
+        <p class="poda">
+            El selector de jQuery usa el atributo id de una etiqueta HTML para encontrar el elemento específico: #id. Para encontrar un elemento con una identificación especifíca, se utiliza el carácter hash(#), seguido por la identificación del elemento HTML, de
+            la siguiente manera:</p>
+
+        <div style="text-align: center;">
+            <img src="./resources/jqTuto/Imagen 8.png" style="margin-top: 3%; margin-bottom: 2%;">
+        </div>
+
+        <p class="poda">
+            Ahora te mostraremos el resultado que tendría este ejemplo puedes interactuar con el resultado generado.
+        </p>
+
+        <div style="margin-left:20%;">
+
+            <div class="divJs" style="margin-top: 5%; margin-left: -7%;">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $("#b1").click(function() {
+                            $("#p1").hide();
+                            $("#p11").hide();
+
+                        });
+                    });
+                </script>
+
+                <h2>¡Bienvenido/a!</h2><br>
+
+                <p id="p11">Buenos días .</p>
+                <p id="p1">Te deseo una feliz semana.</p><br>
+
+                <button id="b1">Presiona para ocultar el elemento</button>
+
+            </div>
+            <div class="divJs" style="margin-top: 5%;">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $("#b2").click(function() {
+                            $("#test").hide();
+                        });
+                    });
+                </script>
+
+                <h2>¡Bienvenido/a!</h2><br>
+
+                <p>Buenas tardes.</p>
+                <p id="test">Que le vaya bien.</p><br>
+
+                <button id="b2">Presiona</button>
+
+            </div>
+
+        </div>
+
+        <p id="title4JQ" class="topics" style="margin-top: 33%;">Métodos de eventos de jQuery</p>
+        <p class="poda">
+            En JQuery, la mayoría de los envetos DOM tienen un método de Java equivalente. Es por ello que te describiremos a continuación los método de eventos de jQuery más utilizados:
+
+            <li class="poda" style="margin-left: 5%;"> Hacer clic() </li>
+            <p class="poda">
+                El método click() adjunta una función de controlador de eventos a un elmento HTML. La función se ejectura cuando el usuario hace clic en el elemento que se encuentra en HTML.
+            </p>
+            <li class="poda" style="margin-left: 5%;">dblclick()</li>
+            <p class="poda">
+                El método dblclick() permite que su función se ejecuta cuando el usuario hace doble clic en el elemento que se encuentra en HTML.
+            </p>
+            <li class="poda" style="margin-left: 5%;">mouseenter()</li>
+            <p class="poda">
+                El método mouseenter() permite que su función se ejecute cuando el puntero del mouse ingresa al elemento HTML.
+            </p>
+            <li class="poda" style="margin-left: 5%;">mouseleave()</li>
+            <p class="poda">
+                El método mouseleave() permite que la función se ejecute cuando el puntero del mouse sale del elemento HTML.
+            </p>
+
+            <li class="poda" style="margin-left: 5%;">atención()</li>
+            <p class="poda">
+                El método focus() adjunta una función de controlador de eventos a un campo de formulario HTML. El objetivo de la función es cuando el campo del formulario se enfoca.
+            </p>
+            <li class="poda" style="margin-left: 5%;">difuminar()</li>
+            <p class="poda">
+                El método blur() se ejecuta cuando el campo del formulario pierde el foco.
+            </p>
+        </p>
+
+        <br><br>
+
+        <div style="text-align: center;">
+
+            <img src="./resources/jqTuto/example1ss.PNG" width="90%">
+
+            <div class="divJS " style="width: 100%;">
+
+                <div>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script>
+                        $(document).ready(function() {
+                            $("#buttonL").click(function() {
+                                $("#div1").fadeIn(2000);
+                                $("#div2").fadeIn(3000);
+                                $("#div3").fadeIn(4000);
+                            });
+                        });
+                    </script>
+                </div>
+
+                <br><br>
+
+                <div style="text-align: center;">
+
+                    <button id=buttonL style="width: 300px;height: 40px;background-color: burlywood;border: none;">Mostrar imágenes con efecto fadeIn</button> <br><br>
+
+                    <img id="div1" style="width:200px;height:200px;display:none;background-image:url('./resources/example/architectural-2950305_1920.jpg');">
+                    <img id="div2" style="width:200px;height:200px;display:none;background-image:url('./resources/example/architecture-5072728_1920.jpg');">
+                    <img id="div3" style="width:200px;height:200px;display:none;background-image:url('./resources/example/light-bulb-2136634_1920.jpg');">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <p id="title5JQ" class="topics ">Animación con JQuery</p>
+        <p class="poda ">
+            Con ayuda de JQuery puede crearse animaciones personalizadas.
+        </p>
+        <p class="poda " style="margin-left: 5%; ">Método animate()</p>
+        <p class="poda ">
+            La sintaxis del método animate es la siguiente:
+        </p>
+        <div style="text-align: center; ">
+            <img src="./resources/jqTuto/Imagen 10.png " style="margin-top: 3%; margin-bottom: 2%; ">
+        </div>
+
+        <li class="poda " style="margin-left: 5%; ">El parámetro params requerido define las propiedades de CSS que se animarán.</li>
+        <li class="poda " style="margin-left: 5%; ">El parámetro de velocidad opcional especifíca la duración de la animación.</li>
+        <li class="poda " style="margin-left: 5%; ">El parámetro de devolución es una función que se ejecutará después de que se ejecute dicha animación.</li>
+
+        <br><br>
+
+        <div style="text-align: center;">
+
+            <img src="./resources/jqTuto/example2ss.PNG" width="90%"><br>
+
+            <div class="divJS " style="width: 100%;">
+
+                <div>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script>
+                        $(document).ready(function() {
+                            $("#buttonL2").click(function() {
+                                $("#divL").animate({
+                                    left: '450px',
+                                    opacity: '0.5',
+                                    height: '350px',
+                                    width: '350px'
+                                });
+                            });
+                        });
+                    </script>
+                </div>
+
+                <div>
+                    <br><br>
+                    <button id="buttonL2" style="width: 100px;height: 40px;">Animación</button><br><br><br>
+
+                    <img id="divL" src="./resources/example/architectural-2950305_1920.jpg" height:300px width:300px position:absolute;>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p id="title6JQ" class="topics ">Uso de valores predefinidos</p>
+        <p class="poda ">
+            Se puede especificar el valor de animación de una propiedad como:
+            <li class="poda " style="color: darkred; margin-left: 5%; ">"show "</li>
+            <li class="poda " style="color: darkred;margin-left: 5%; ">"hide "</li>
+            <li class="poda " style="color: darkred;margin-left: 5%; ">"toggle "</li>
+        </p>
+        <div style="text-align: center; ">
+            <img src="./resources/jqTuto/Imagen 11.png " style="margin-top: 3%; margin-bottom: 2%; ">
+        </div>
+
+        <p id="title7JQ" class="topics ">JQuery-Método CSS()</p>
+
+        <p class="poda ">
+            El método css() establece una o más propiedades de estilo para los elementos seleccionados.
+        </p>
+        <h4 class="poda " style="margin-left: 5%; ">Devolver una propiedad CSS</h4>
+        <p class="poda ">
+            Para devolver el valor de una propiedad CSS especifíca, se utiliza la siguiente sintáxis:
+        </p>
+        <div style="text-align: center; ">
+            <img src="./resources/jqTuto/Imagen 12.png " style="margin-top: 3%; margin-bottom: 2%; ">
+        </div>
+
+        <h4 class="poda " style="margin-left: 5%; ">Establecer una propiedad CSS</h4>
+        <p class="poda ">Para establecer una propiedad CSS especifíca, se utiliza la siguiente sintáxis:</p>
+        <div style="text-align: center; ">
+            <img src="./resources/jqTuto/Imagen13.png " style="margin-top: 3%; margin-bottom: 2%; ">
+
+        </div>
+
+        <h4 class="poda " style="margin-left: 5%; ">Establecer varias propiedades de CSS</h4>
+        <p class="poda ">Para establecer varias propiedades de CSS, se utiliza la siguiente sintaxis:</p>
+        <div style="text-align: center; ">
+            <img src="./resources/jqTuto/Imagen14.png " style="margin-top: 3%; margin-bottom: 2%; ">
+
+        </div>
+
+        <p id="title8JQ" class="topics">Video de JQuery</p>
+
+        <p class="poda">En este primer video se te enseña usar las animaciones en JQuery. En la siguiente sección te compartiremos el código que se uso para hacer posible está función. Podrás interactuar con él ingresando a la plataforma de CodePen. </p><br><br>
+
+        <div style="text-align: center;">
+            <iframe width="720" height="420" src="https://www.youtube.com/embed/3de2peG2uvw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+
+        <br><br>
+
+        <p class="poda">En este segundo video se te enseña a crear filtros de búsqueda con JavaScript igualmente algunos de los operadores más usados. En la siguiente sección te compartiremos el código que se uso para hacer posible está función. Podrás interactuar con
+            él ingresando a la plataforma de CodePen. </p><br><br>
+
+        <div style="text-align: center;">
+            <iframe width="720" height="420" src="https://www.youtube.com/embed/aPLkMXU0Now" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <br><br>
+
+        <p id="title9JQ" class="topics">Ejemplo de JQuery</p>
+
+        <p class="poda">Te compartimos el código realizado en el video sobre el ejercicio de Animación básica con JavaScript puedes ejecutarlo para visualizar el resultado final, también obtener una copia del código utilizado. Puedes editar los parámetros ingresando
+            a la plataforma de CodePen. Esperamos te sea útil!
+        </p><br><br>
+
+        <div style="text-align: center;">
+
+            <p class="codepen" data-height="500" data-theme-id="dark" data-default-tab="html,result" data-user="luisanunez1" data-slug-hash="VwaRmMN" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                data-pen-title="JQuery Ejemplo">
+                <span>See the Pen <a href="https://codepen.io/luisanunez1/pen/VwaRmMN">
+                JQuery Ejemplo</a> by Luisa Núñez (<a href="https://codepen.io/luisanunez1">@luisanunez1</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+
+        <br><br>
+
+        <p class="poda">Te compartimos el código realizado en el video sobre el ejercicio de Filtro de búsqueda básico con JavaScript puedes ejecutarlo para visualizar el resultado final, también obtener una copia del código utilizado. Puedes editar los parámetros ingresando
+            a la plataforma de CodePen. Esperamos te sea útil!
+        </p><br><br>
+
+        <div style="text-align: center;">
+
+            <p class="codepen" data-height="500" data-theme-id="dark" data-default-tab="html,result" data-user="Odalys16" data-slug-hash="qBZvRbW" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                data-pen-title="qBZvRbW">
+                <span>See the Pen <a href="https://codepen.io/Odalys16/pen/qBZvRbW">
+                qBZvRbW</a> by Odalys  (<a href="https://codepen.io/Odalys16">@Odalys16</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+
+
+
+    </div>
+
+
+
+    <footer style="background-color: peachpuff; margin-top: 10%; ">
+
+        <br>
+
+        <p style="margin-left: 10%; "><strong>Autores:</strong>
+            <br> Renchi Meléndez <a href="# ">renchi.melendez@gmail.com</a>
+            <br>Odalys Icaza <a href="# ">odalys.icaza@gmail.com</a>
+            <br> Luisa Núñez <a href="# ">luisa.nunez@gmail.com</a>
+            <br>Yaró Flores <a href="# ">yaro.flores@gmail.com</a>
+            <p style="text-align:right; margin-right:10% ">Información de contacto presente en el apartado <a href="./aboutus.html ">"Sobre Nosotros " </a></p>
+            <br>
+            <p style="text-align: center;font-weight: bold; ">© 2020 Todos los derechos reservados</p>
+            <br>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Roly Tutorials</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='./design.css'>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script src='./javascript/main.js'></script>
+
+</head>
+
+<body>
+
+    <center>
+        <img src="./resources/Logo.png" class="logo">
+    </center>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./js.html">JavaScript</a></li>
+            <li><a href="./jq.html">JQuery</a></li>
+            <li><a href="./aboutus.html">Sobre nosotros</a></li>
+        </ul>
+    </nav>
+
+    <img src="https://miro.medium.com/max/3200/1*OF0xEMkWBv-69zvmNs6RDQ.gif" width="100%">
+
+    <img src="./resources/JS.png" class="pageTuto">
+    <p id="title1JS" class="pageTutoText">¿Qué es JavaScript?</p>
+
+    <ul id="navigation" style="font-weight: bold;">
+        <li><a href="#title1JS">¿Qué es JavaScript?</a></li>
+        <li>
+            <a href="#title2JS">Conociendo JavaScript</a>
+        </li>
+        <li>
+            <a href="#title3JS">Etiquetas de errores</a>
+        </li>
+        <li>
+            <a href="#title4JS">Operadores aritméticos</a>
+        </li>
+        <li>
+            <a href="#title5JS">Eventos en JavaScript</a>
+        </li>
+        <li><a href="#title6JS">Bucles en JavaScript</a></li>
+        <li>
+            <a href="#title7JS">Bucle Do While</a>
+        </li>
+        <li>
+            <a href="#title8JS">Video de JavaScript</a>
+        </li>
+        <li>
+            <a href="#title9JS">Ejemplo de JavaScript</a>
+        </li>
+    </ul>
+
+    <div class="contenedor">
+
+        <p class="poda">JavaScript, es uno de los más potentes e importantes lenguajes de programación en la actualidad, por tres enfoques claros: es útil, práctico y está disponible en cualquier navegador web. JavaScript es creado por Brendan Eich y vio la luz en el
+            año 1995 con el nombre de LiveScript, que luego fue nombrado JavaScript, nace como un lenguaje sencillo destinado a añadir algunas características interactivas a las páginas web. Sin embargo, hoy en día ha crecido de manera acelerada y es
+            el lenguaje de programación que se utiliza en casi todos los sitios web en el mundo.
+        </p>
+
+        <p class="poda">
+            JavaScript es uno de los lenguajes de programación web debido a varias razones, entre la cuales podemos destacar las siguientes:
+        </p>
+
+        <ul class="poda" style="margin-left: 5%;">
+            <li>Es liviano.</li>
+            <li>Multiplataforma, ya que se puede utilizar en Windows, <br> Linux o Mac o en el navegador de tu preferencia.</li>
+            <li>Es imperativo y estructurado, mediante un conjunto de instrucciones indica al computador qué tarea debe realizar.</li>
+
+            <li>Prototipado, debido a que usa prototipos en vez de clases para el uso de herencia.</li>
+
+            <li>Orientado a objetos y eventos.</li>
+
+            <li>Es Interpretado, no se compila para poder ejecutarse.</li>
+
+        </ul>
+
+        <p id="title2JS" class="topics">Conociendo JavaScript</p>
+
+        <p class="poda"> JavaScript puede cambiar contenidos que se encuentran dentro de un HTML con ayuda de un "id". Este identificador se debe de posicionar dentro del elemento con un nombre de variable para que pueda ser reconocido. A continuación te mostraremos un
+            ejemplo:
+        </p>
+
+        <div style="text-align: center;">
+            <img src="./resources/jsTuto/1.png" style="margin-top: 3%; margin-bottom: 2%;">
+        </div>
+
+        <p class="poda">
+            Ahora te mostraremos el resultado que tendría este ejemplo puedes interactuar con el resultado generado.
+        </p>
+
+        <div style="margin-right: 30%;">
+            <div class="divJQ" style="margin-top: 5%;">
+                <h2>Hola! ¿Cuál es tu nombre?</h2><br>
+                <p id="ejemplo"> </p><br>
+                <button type="button" onclick='document.getElementById("ejemplo").innerHTML = 
+                "Tu nombre es JavaScript!"'>Descúbrelo</button>
+            </div>
+        </div>
+
+        <p class="poda" style="margin-top: 30%;">Luego de que conozcas como utilizar el JavaScript en conjunto de un archivo HTML te enseñaremos a usar las etiquetas de <strong>script</strong>. Estás son utilizadas para definir o hacer referencia a un documento de tipo JavaScript dentro de un
+            HTML.
+        </p>
+
+        <p class="poda">
+            Las funciones son bloques de código JavaScript, que son ejecutados al momento de ser solicitados. Podremos llamar una función cuando ocurre un evento, así como el ejemplo anterior, cuando el usuario de clic a un botón.
+        </p>
+
+        <p class="poda">
+            Se permite colocar un sin números de scripts en un documento de tipo HTML, estos pueden estar dentro del <strong>body</strong>, <strong>head</strong> o incluso en ambos. Sin embargo, también podremos crear un documento externo de este tipo,
+            para referenciarlo con el código de HTML sólo tendremos que escribir en el <strong>head</strong> o en <strong>body</strong> el enlace que nos ayudará acceder a los métodos o funciones que contiene el archivo con el siguiente código:
+        </p>
+
+        <div style="text-align: center;">
+            <img src="./resources/jsTuto/2.png" style="margin-top: 4%; margin-bottom: 2%; width: 40%;">
+        </div>
+
+        <p class="poda">
+            Hay que resaltar que los archivos externos de JavaScript no deben de contener las etiquetas <strong>script</strong> para poder escribir los métodos a como se realiza internamente. Es más recomendable usar archivos de JavaScript externo debido
+            a los siguientes puntos importantes definidos en la w3Schools:
+        </p>
+
+        <ul class="poda" style="margin-left: 5%;">
+            <li>Separa el código HTML y código.</li>
+            <li>Hace que el HTML y JavaScript sean más fáciles de comprender.</li>
+            <li>Los archivos de JavaScript en caché pueden acelerar la carga de la página</li>
+        </ul>
+
+        <p class="poda">
+            Hemos venido hablando de la referenciación de archivos de tipo JavaScript en manera local. También tenemos la opción de usar scripts con una URL a la página web actual, es decir puede realizarse de la siguiente manera:
+        </p>
+
+        <div style="text-align: center;">
+            <img src="./resources/jsTuto/3.png" style="margin-top: 4%; margin-bottom: 2%; width: 50%;">
+        </div>
+
+        <p class="poda">
+            La sintaxis de este lenguaje esta inspirado en gran medida a C, Java y Perl La sintaxis de la misma manera tiene algunas características entre las cuales podemos destacar:
+        </p>
+
+        <br>
+
+        <ol style="margin-left: 3%" class="poda">
+            <li><b>No se tienen en cuenta los espacios en blanco y las nuevas lineas</b></li>
+            <p>El intérprete de JavaScript ignora cualquier espacio en blanco sobrante, por lo que el código se puede ordenar de forma adecuada para entenderlo mejor.</p>
+            <br>
+            <div style="text-align: center;">
+                <img src="./resources/jsTuto/csintaxis1.png" alt="">
+            </div>
+            <br>
+
+            <li><b>Diferencia las letras mayúsculas de las minúsculas, es decir case sensitive</b></li>
+            <p>Lo que significa que se pueden escribir variables casi idencticas con una diferencia en su escritura, como en el siguiente ejemplo.</p>
+            <br>
+
+            <li><b>No se define el tipo de las varibales</b></li>
+            <p>Al crear una variable no se necesita indicar el tipo de dato que almacenará, por lo que una misma variable puede almacenar diferentes tipos de datos durante la ejecución del script.</p>
+            <br>
+            <div style="text-align: center;">
+                <img src="./resources/jsTuto/csintaxis3.png">
+            </div>
+
+            <br>
+
+            <li><b>Se pueden incluir comentarios</b></li>
+            <p>Los comentarios se utilizan para añadir información en el código fuente del programa. El intérprete no lee los comentarios que se añadan en JavaScript se distinguen dos maneras de hacer comentarios en el código: <b>por línea</b> donde el comentario
+                debe estar antepuesto por dos slash "//" y <b>comentarios por bloque</b> donde el comentario comienza por un slash seguido de un asterisco y termina con un asterisco seguido de un slash.</p>
+            <br>
+            <div style="text-align: center;">
+                <img src="./resources/jsTuto/csintaxis5.png" alt="">
+            </div>
+
+        </ol>
+
+        <p id="title3JS" class="topics">Etiquetas de errores de JavaScript</p>
+        <p class="poda">En Javascript existen una serie de declaraciones que sirven para buscar, manejar, personalizar y controlar la ejecución cuando un error. Entre estos tenemos:
+        </p>
+
+        <ul class="poda" style="margin-left: 5%;">
+            <li>La declaración <b>try</b> permite probar un bloque de código en busca de errores.</li>
+            <li>La declaración <b>catch</b> permite manejar el comportamiento del error, cuando y como este será presentado</li>
+            <li>La declaración <b>throw</b> permite crear errores personalizados.</li>
+            <li> La declaración <b>finally</b> permite ejecutar código, después de intentar y capturar, independientemente del resultado que se obtenga.</li>
+
+        </ul>
+
+        <p class="poda">Al hacer uso de estas declaraciones se pueden controlar errores al ejecutar código JavaScript. Los errores pueden ser errores de codificación cometidos por el programadorm errores debido a entradas incorrectas y otras cosas imprevisibles que ocurran.
+            En el siguiente puedes interectuar con su funcionamiento.</p><br><br>
+
+        <div>
+            <img src="./resources/jsTuto/jsample1.png" width="50%" style="margin-left: 5%;">
+
+            <div class="divJQ" style="margin-top: 6%;">
+
+                <p style="text-align: justify;"><strong>Por favor ingresa un número entre 5 y 10:</strong></p><br>
+
+                <input id="ejemploY" type="text"><br><br>
+                <button type="button" onclick="myFunction()">Test Input</button><br><br>
+                <p id="p1"></p>
+
+                <script>
+                    function myFunction() {
+                        var message, x;
+                        message = document.getElementById("p1");
+                        message.innerHTML = "";
+                        x = document.getElementById("ejemploY").value;
+                        try {
+                            if (x == "") throw "esta vacío";
+                            if (isNaN(x)) throw "no es un número";
+                            x = Number(x);
+                            if (x < 5) throw "es demasiado bajo";
+                            if (x > 10) throw "es demasiado alto";
+                            if (x >= 5 || x <= 10) throw "es correcto";
+                        } catch (err) {
+                            message.innerHTML = " El dato " + err;
+                        }
+                    }
+                </script>
+            </div>
+
+        </div>
+
+        <p id="title4JS" class="topics">Operadores aritméticos</p>
+
+        <p class="poda">En JavaScript puedes crear variables que son conocidas como contenedores para almacenar valores de un tipo de dato. Estás pueden expresarse según el nombre que desees, y se declaran con la palabra reservada <strong>var</strong> antes de el identificador.
+            Estas variables pueden asignarse un valor con ayuda del operador <strong>=</strong> se puede realizar directamente al declarar el tipo de dato este también puede ir acompañado de operadores.</p>
+
+        <p class="poda">En el siguiente recuadro te mostraremos los operadores que puedes utilizar en JavaScript con su respectiva descripción:</p>
+
+        <div style="text-align: center; margin-left: 30%;">
+            <table style="width: 50%; text-align: center; background-color:#f0be275d;" border="1px" class="poda">
+                <tr>
+                    <td><strong>Operador</strong></td>
+                    <td><strong>Descripción</strong></td>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>Suma</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Resta</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplicación</td>
+                </tr>
+                <tr>
+                    <td>**</td>
+                    <td>Exponente</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>División</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Residuo</td>
+                </tr>
+                <tr>
+                    <td>++</td>
+                    <td>Incremento</td>
+                </tr>
+                <tr>
+                    <td>--</td>
+                    <td>Decremento</td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <p class="poda">Cuando ya conozcamos el significado de cada uno de los operadores te mostraremos a como puedes utilizarlo con ayuda de un ejemplo sencillo en donde podrás ver como esto se usa y funciona.</p>
+        <p class="poda">Además de estos operadores existen también los valores de precedencia del operador que son usados usualmente en bifurcaciones cuando quieres establecer condiciones sobre una acción que debe de cumplir ciertos parámetros establecidos, agrupaciones
+            o llamadas de una función, entre los más usados tenemos los siguientes:
+        </p>
+
+        <div style="text-align: center; margin-left: 30%;">
+            <table style="width: 50%; text-align: center; background-color:#f0be275d;" border="1px" class="poda">
+                <tr>
+                    <td><strong>Operador</strong></td>
+                    <td><strong>Descripción</strong></td>
+                </tr>
+                <tr>
+                    <td>()</td>
+                    <td>Agrupación de expresiones</td>
+                </tr>
+                <tr>
+                    <td>()</td>
+                    <td>Llamada de función</td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>Lógico no</td>
+                </tr>
+                <tr>
+                    <td>>></td>
+                    <td>Cambiar a la derecha</td>
+                </tr>
+                <tr>
+                    <td>> =</td>
+                    <td>Mayor que o igual</td>
+                </tr>
+                <tr>
+                    <td>&&</td>
+                    <td>Lógico Y</td>
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>Lógico OR</td>
+                </tr>
+                <tr>
+                    <td>?:</td>
+                    <td>Condición</td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <p class="poda">En el siguiente ejemplo te mostraremos como puedes usar algunos de los operadores en los proyectos que estés realizando. Puedes asignar los valores a una variable definida por ti mismo y luego sólo indicar el tipo de operación que deseas realizar.</p>
+
+        <br>
+
+        <div>
+
+            <img src="./resources/jsTuto/jsample2.png" width="60%">
+
+            <div class="divJQ" style="margin-top: -40%;">
+
+                <h4>Operadores Aritméticos</h4><br>
+
+                <p style="font-weight: bold;">Valor de X=5 y Y=2</p><br>
+
+                <p id="suma"></p>
+                <p id="resta"></p>
+                <p id="modulo"></p>
+                <p id="increment"></p>
+                <p id="decrement"></p>
+                <p id="exponente"></p>
+
+                <script>
+                    var x = 5;
+                    var y = 2;
+
+                    var suma = x + y;
+                    var resta = x - y;
+                    var modulo = x % y;
+                    var increment = ++x;
+                    var decrement = --y;
+                    var exponente = Math.pow(5, 2);
+
+                    document.getElementById("suma").innerHTML = "Suma = " + suma;
+                    document.getElementById("resta").innerHTML = "Resta = " + resta;
+                    document.getElementById("modulo").innerHTML = "Modulo = " + modulo;
+                    document.getElementById("increment").innerHTML = "Incremento de X = " + increment;
+                    document.getElementById("decrement").innerHTML = "Decremento de Y = " + decrement;
+                    document.getElementById("exponente").innerHTML = "Exponente = " + exponente;
+                </script>
+            </div>
+
+        </div>
+
+        <p id="title5JS" class="topics">Eventos en JavaScript</p>
+
+        <p class="poda">Los eventos son acciones u ocurrencias que suceden en el sistema que está programando y que el sistema le informa para que pueda responder de alguna manera si lo desea. Por ejemplo, si el usuario hace clic en un botón en una página web, es posible
+            que desee responder a esa acción mostrando un cuadro de información.</p>
+        <p class="poda">En el caso de la Web, los eventos se desencadenan dentro de la ventana del navegador y tienden a estar unidos a un elemento específico que reside en ella; podría ser un solo elemento, un conjunto de elementos, el documento HTML cargado en la pestaña
+            actual o toda la ventana del navegador. Hay muchos tipos diferentes de eventos que pueden ocurrir, por ejemplo:</p>
+
+        <ul class="poda" style="margin-left: 5%;">
+
+            <li>El usuario hace clic con el mouse sobre un elemento determinado o coloca el cursor sobre un elemento determinado.</li>
+            <li>El usuario presiona una tecla en el teclado.</li>
+            <li>El usuario cambia el tamaño o cierra la ventana del navegador.</li>
+            <li>Una página web termina de carga</li>
+            <li>Un formulario se envía</li>
+            <li>Un video se reproduce, pausa o finaliza la reproducción.</li>
+            <li>Un error ocurre.
+            </li>
+        </ul>
+
+        <p class="poda">Cada evento disponible tiene un controlador de eventos, que es un bloque de código (generalmente una función JavaScript definida por el usuario) que se ejecutará cuando se active el evento. Cuando dicho bloque de código se define para ejecutarse
+            en respuesta a un disparo de evento, decimos que estamos registrando un controlador de eventos.</p>
+
+        <p class="poda" style="font-weight: bold;">Forma de uso de eventos</p>
+
+        <p class="poda">Hay muchas maneras distintas en las que puedes agregar event listeners a los sitios web, que se ejecutara cuando el evento asociado se dispare. Por ejemplo:</p>
+
+        <br>
+
+        <div style="text-align: center;">
+            <img src="./resources/jsTuto/jexample3.png" alt="imagen" width="50%">
+        </div>
+
+        <br>
+
+        <p class="poda">La propiedad <b>onclick</b> es la propiedad del manejador de eventos que está siendo usada en esta situación. Es escencialmente una propiedad como cualquier otra disponible en el botón (por ejemplo: btn.textContent, or btn.style), pero es de un
+            tipo especial, cuando lo configura para ser igual a algún código, ese código se ejecutará cuando el evento se dispare en el botón.</p>
+
+
+        <div class="divJQ" style="margin-right: 38%; margin-top: 4%;">
+            <p style="font-weight: bold;">Haz click en el boton para mostrar la fecha y la hora</p>
+
+            <br>
+
+            <button onclick="displayDate() ">La fecha y la hora son:</button>
+
+            <script>
+                function displayDate() {
+                    document.getElementById("ejemplojs2 ").innerHTML = Date();
+                }
+            </script>
+
+            <br><br>
+
+            <p id="ejemplojs2 "></p>
+
+        </div>
+
+        <p id="title6JS" class="topics" style="margin-top: 32%;">Bucles en JavaScript</p>
+        <p class="poda">Un bucle es la repetición de uno o varios enunciados un número determinado de veces. Hay dos estructuras básicas para crear bucles: for y do … while.</p>
+
+        <p class="poda"><b>Sintaxis del bucle for</b></p>
+        <p class="poda"> La sintaxis del bucle <b>for</b> es la siguiente: <br><br><b>for (contador; condición; variación_del_contador)<br>{ ...enunciados a ejecutar... }</b>
+        </p> <br>
+        <p class="poda">Donde:</p>
+        <ul class="poda" style="margin-left: 5%;">
+            <li><b>contador</b> no es más que una variable que indica la cantidad de veces que se ha ejecutado el bucle.</li>
+            <li><b>condición</b> establece un límite para las repeticiones; el bucle se repite mientras que la condición sea verdadera.</li>
+            <li><b>variación_del_contador</b> indica un incremento o un decremento para el contador.</li>
+            <li><b>enunciados a ejecutar</b> son los procesos que se realizarán dentro del bucle.</li>
+        </ul>
+
+        <p class="poda">Un ejemplo de este bucle puede ser el siguiente, que recorre los valores de un arreglo y los muestra. </p>
+        <br><br>
+
+        <div>
+
+            <img style="margin-left: 5%;" src="./resources/jsTuto/jexample5.png" alt="imagen5" width="50%">
+
+            <div class="divJQ" style="margin-top:3%; margin-right: 10%;">
+
+                <p style="text-align: justify; font-weight: bold;">Donde obtenemos el siguiente resultado:</p><br>
+                <p id="ejemplo5"></p>
+
+                <script>
+                    var integrantes = ["Luisa", "Renchi", "Odalys", "Yaró"];
+
+                    var i = 0;
+                    var len = integrantes.length;
+                    var text = "";
+
+                    for (; i < len;) {
+                        text += integrantes[i] + "<br>";
+                        i++;
+                    }
+                    document.getElementById("ejemplo5").innerHTML = text;
+                </script>
+            </div>
+
+        </div>
+
+        <br>
+
+        <p id="title7JS" class="topics">Sintaxis del bucle do ... while</p>
+        <p class="poda"> El comportamiento de <b>do … while</b> es similar al de <b>for</b>, con la diferencia de que primero se ejecutan los enunciados y luego se comprueba la codición. La sintaxis del bucle <b>do ... while</b> es la siguiente: <br><br><b>do{ <br> ...enunciados a ejecutar... <br> } while (condición); </b>
+        </p>
+
+        <p class="poda">Un ejemplo de este bucle puede ser el siguiente, que recorre los valores de un arreglo y los muestra. </p>
+        <br><br>
+
+        <div>
+
+            <img style="margin-left: 5%;" src="./resources/jsTuto/jexample4.png" alt="imagen5" width="50%">
+
+            <div class="divJQ" style="margin-top:1%; margin-right: 10%;">
+
+                <p style="text-align: justify; font-weight: bold;">Donde obtenemos el siguiente resultado:</p>
+                <br>
+                <p id="jexample4"></p>
+
+                <script>
+                    var grupito = ["EL", "MERO", "GRUPO", "ROLY"];
+                    var i = 0;
+                    var text = "";
+                    while (grupito[i]) {
+                        text += grupito[i] + "<br>";
+                        i++;
+                    }
+                    document.getElementById("jexample4").innerHTML = text;
+                </script>
+            </div>
+
+        </div>
+
+        <p id="title8JS" class="topics">Video de JavaScript</p>
+
+        <p class="poda">En este primer video se te enseña usar las condiciones en JavaScript igualmente algunos de los operadores más usados. En la siguiente sección te compartiremos el código que se uso para hacer posible está función. Podrás interactuar con él ingresando
+            a la plataforma de CodePen. </p><br><br>
+
+        <div style="text-align: center;">
+            <iframe width="720" height="420" src="https://www.youtube.com/embed/MU9wAJQUvyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <br><br>
+
+        <p class="poda">En este segundo video se te enseña a crear cálculos en JavaScript igualmente algunos de los operadores más usados. En la siguiente sección te compartiremos el código que se uso para hacer posible está función. Podrás interactuar con él ingresando
+            a la plataforma de CodePen. </p><br><br>
+
+        <div style="text-align: center;">
+            <iframe width="720" height="420" src="https://www.youtube.com/embed/v0mNvupwn24" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <br><br>
+
+        <p id="title9JS" class="topics">Ejemplo de JavaScript</p>
+
+        <p class="poda">Te compartimos el código realizado en el video sobre el ejercicio de Validación básico con JavaScript puedes ejecutarlo para visualizar el resultado final, también obtener una copia del código utilizado. Puedes editar los parámetros ingresando
+            a la plataforma de CodePen. Esperamos te sea útil!
+        </p><br><br>
+
+        <div style="text-align: center;">
+
+            <p class="codepen" data-height="500" data-theme-id="dark" data-default-tab="js,result" data-user="frabelle" data-slug-hash="RwadRXj" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                data-pen-title="JSTutorial">
+                <span>See the Pen <a href="https://codepen.io/frabelle/pen/RwadRXj">
+                JSTutorial</a> by frabelle (<a href="https://codepen.io/frabelle">@frabelle</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+        </div>
+
+        <br><br>
+
+        <p class="poda">Te compartimos el código realizado en el video sobre el ejercicio de Cálculos de costo básico con JavaScript puedes ejecutarlo para visualizar el resultado final, también obtener una copia del código utilizado. Puedes editar los parámetros ingresando
+            a la plataforma de CodePen. Esperamos te sea útil!
+        </p><br><br>
+
+        <div style="text-align: center;">
+
+            <p class="codepen" data-height="500" data-theme-id="dark" data-default-tab="js,result" data-user="Alec06FTY" data-slug-hash="PoNLbgG" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                data-pen-title="PoNLbgG">
+                <span>See the Pen <a href="https://codepen.io/Alec06FTY/pen/PoNLbgG">
+                PoNLbgG</a> by Alec (<a href="https://codepen.io/Alec06FTY">@Alec06FTY</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <footer style="background-color: papayawhip; margin-top: 10%; ">
+
+        <br>
+
+        <p style="margin-left: 10%; "><strong>Autores:</strong>
+            <br> Renchi Meléndez <a href="# ">renchi.melendez@gmail.com</a>
+            <br>Odalys Icaza <a href="# ">odalys.icaza@gmail.com</a>
+            <br> Luisa Núñez <a href="# ">luisa.nunez@gmail.com</a>
+            <br>Yaró Flores <a href="# ">yaro.flores@gmail.com</a>
+            <p style="text-align:right; margin-right:10% ">Información de contacto presente en el apartado <a href="./aboutus.html ">"Sobre Nosotros " </a></p>
+            <br>
+            <p style="text-align: center;font-weight: bold; ">© 2020 Todos los derechos reservados</p>
+            <br>
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

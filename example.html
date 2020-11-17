@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo filtrar tabla con jquery</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            width: 30%;
+            background-color: rgb(236, 199, 205)
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            border-color: blue;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2 style="text-align: center; margin-top: 5%;">¡Vamos a filtrar datos</h2>
+    <p style="text-align: center;"> Puedes consultar en el campo de entrada por el nombre, apellido y correo.</p>
+    <center>
+        <input style="background-color: rgb(212, 235, 238);" id="myInput" type="textt" placeholder="Buscar...">
+    </center>
+    <br><br>
+    <center>
+        <table>
+            <thead>
+                <tr>
+                    <th style="text-align: center;">Nombre</th>
+                    <th style="text-align: center;">Apellido</th>
+                    <th style="text-align: center;">Correo</th>
+
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                    <td>Renchi</td>
+                    <td>Meléndez</td>
+                    <td>renchi123@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Luisa</td>
+                    <td>Nuñez</td>
+                    <td>luisan@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Odalys</td>
+                    <td>Icaza</td>
+                    <td>odalysi16@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Yaró</td>
+                    <td>Flores</td>
+                    <td>yaro10@gmail.com</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </center>
+
+</body>
+
+</html>
